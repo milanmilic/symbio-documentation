@@ -1,0 +1,2489 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.1">
+    
+    
+      
+        <title>Troubleshooting - Symbio Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.982221ab.css">
+      
+        <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
+      
+    
+    
+      <script src="../../../../assets/javascripts/modernizr.1f0bcf2b.js"></script>
+    
+    
+      
+    
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#troubleshooting" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../../.." title="Symbio Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Symbio Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              Troubleshooting
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/ploetz-zeller/symbio-documentation/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../" title="Admin" class="md-tabs__link md-tabs__link--active">
+          Admin
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../developer/" title="Developer" class="md-tabs__link">
+          Developer
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../azure/" title="Azure" class="md-tabs__link">
+          Azure
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../../.." title="Symbio Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Symbio Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/ploetz-zeller/symbio-documentation/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      Admin
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Admin
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2">
+    
+    <label class="md-nav__link" for="nav-1-2">
+      Installation Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-2">
+        Installation Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2-1" type="checkbox" id="nav-1-2-1">
+    
+    <label class="md-nav__link" for="nav-1-2-1">
+      Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-2-1">
+        Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../installation-guide/installation/Requirements/" title="Preparation" class="md-nav__link">
+      Preparation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../installation-guide/installation/Installation-Skripted/" title="Scripted Installation" class="md-nav__link">
+      Scripted Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../installation-guide/installation/Installation-Manual/" title="Manual Installation" class="md-nav__link">
+      Manual Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../installation-guide/installation/Finishing/" title="First Steps" class="md-nav__link">
+      First Steps
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-2-2" type="checkbox" id="nav-1-2-2">
+    
+    <label class="md-nav__link" for="nav-1-2-2">
+      Configuration with SAML
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-2-2">
+        Configuration with SAML
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../installation-guide/saml-configuration/1_introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../installation-guide/saml-configuration/2_setting-up-saml/" title="Setting Up SAML" class="md-nav__link">
+      Setting Up SAML
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../installation-guide/saml-configuration/3_user-rights-management/" title="User & Rights Management" class="md-nav__link">
+      User & Rights Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../installation-guide/saml-configuration/4_example-adfs/" title="Example - Symbio & AD FS" class="md-nav__link">
+      Example - Symbio & AD FS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../installation-guide/saml-configuration/5_example-aad/" title="Example - Symbio & Azure AD" class="md-nav__link">
+      Example - Symbio & Azure AD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../installation-guide/saml-configuration/6_checklist/" title="Checklist" class="md-nav__link">
+      Checklist
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3" type="checkbox" id="nav-1-3" checked>
+    
+    <label class="md-nav__link" for="nav-1-3">
+      Services
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-3">
+        Services
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-1" type="checkbox" id="nav-1-3-1">
+    
+    <label class="md-nav__link" for="nav-1-3-1">
+      Atlassian Connector
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-3-1">
+        Atlassian Connector
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../atlassian-connector/installation_guide/" title="Installation guide" class="md-nav__link">
+      Installation guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../atlassian-connector/using_symbioatlassian/" title="Using Symbio to Atlassian" class="md-nav__link">
+      Using Symbio to Atlassian
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-2" type="checkbox" id="nav-1-3-2">
+    
+    <label class="md-nav__link" for="nav-1-3-2">
+      Intrafind Indexer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-3-2">
+        Intrafind Indexer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intrafind-indexer/installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intrafind-indexer/configuration/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-3" type="checkbox" id="nav-1-3-3">
+    
+    <label class="md-nav__link" for="nav-1-3-3">
+      Intrafind Search Proxy
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-3-3">
+        Intrafind Search Proxy
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intrafind-search-proxy/installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intrafind-search-proxy/configuration/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../web-jobs-scheduler/" title="Web Jobs Scheduler" class="md-nav__link">
+      Web Jobs Scheduler
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-5" type="checkbox" id="nav-1-3-5" checked>
+    
+    <label class="md-nav__link" for="nav-1-3-5">
+      Reporting Service
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-3-5">
+        Reporting Service
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-5-1" type="checkbox" id="nav-1-3-5-1">
+    
+    <label class="md-nav__link" for="nav-1-3-5-1">
+      Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-1-3-5-1">
+        Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../preliminaries/" title="Preliminaries" class="md-nav__link">
+      Preliminaries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rms-install-scripted/" title="RMS Scripted installation" class="md-nav__link">
+      RMS Scripted installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rms-install-manual/" title="RMS Manual installation" class="md-nav__link">
+      RMS Manual installation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-5-2" type="checkbox" id="nav-1-3-5-2" checked>
+    
+    <label class="md-nav__link" for="nav-1-3-5-2">
+      Configuration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-1-3-5-2">
+        Configuration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../SSRSDeployReports/" title="SSRS Reports" class="md-nav__link">
+      SSRS Reports
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RMSconfiguration/" title="RMS Configuration" class="md-nav__link">
+      RMS Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Troubleshooting
+      </label>
+    
+    <a href="./" title="Troubleshooting" class="md-nav__link md-nav__link--active">
+      Troubleshooting
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general" title="General" class="md-nav__link">
+    General
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rms-troubleshooting" title="RMS Troubleshooting" class="md-nav__link">
+    RMS Troubleshooting
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http-error-50019-internal-server-error-incorrect-config" title="HTTP Error 500.19 Internal Server Error - Incorrect Config" class="md-nav__link">
+    HTTP Error 500.19 Internal Server Error - Incorrect Config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#an-error-occurred-while-starting-the-application" title="An error occurred while starting the application" class="md-nav__link">
+    An error occurred while starting the application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rms-shows-error-message-in-log-when-activating-clr" title="RMS shows error message in log when activating CLR" class="md-nav__link">
+    RMS shows error message in log when activating CLR
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#symbio-troubleshooting" title="Symbio Troubleshooting" class="md-nav__link">
+    Symbio Troubleshooting
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linkingunlinking-doesnt-work" title="Linking/unlinking doesn't work" class="md-nav__link">
+    Linking/unlinking doesn't work
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#symbio-shows-a-red-error-message" title="Symbio shows a red error message" class="md-nav__link">
+    Symbio shows a red error message
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#after-unlinking-the-report-pool-the-reports-remain-in-the-storage-that-was-unlinked" title="After unlinking the report pool the reports remain in the storage that was unlinked" class="md-nav__link">
+    After unlinking the report pool the reports remain in the storage that was unlinked
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#after-linking-the-report-pool-no-reports-appear-in-symbio" title="After linking the report pool no reports appear in Symbio" class="md-nav__link">
+    After linking the report pool no reports appear in Symbio
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-of-reports-in-symbio-fails" title="Display of reports in Symbio fails" class="md-nav__link">
+    Display of reports in Symbio fails
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reports-show-incorrect-data" title="Reports show incorrect data" class="md-nav__link">
+    Reports show incorrect data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#help-everything-is-messed-up-and-i-want-to-start-over-clean" title="HELP! Everything is messed up and I want to start over clean" class="md-nav__link">
+    HELP! Everything is messed up and I want to start over clean
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-all-your-components" title="Setup all your components" class="md-nav__link">
+    Setup all your components
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unlink-your-database" title="Unlink your database" class="md-nav__link">
+    Unlink your database
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clean-existing-data-preserving-created-databases" title="Clean existing data preserving created databases" class="md-nav__link">
+    Clean existing data preserving created databases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-6" type="checkbox" id="nav-1-3-6">
+    
+    <label class="md-nav__link" for="nav-1-3-6">
+      SAP Solution Manager Connector
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-3-6">
+        SAP Solution Manager Connector
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sap-solution-manager-connector/SolmanInterfaceSetUpGuide/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sap-solution-manager-connector/SymbioToSolMansynchronization/" title="Symbio to SolMan synchronization" class="md-nav__link">
+      Symbio to SolMan synchronization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sap-solution-manager-connector/SymbioToSolManDiagramSynchronization/" title="Symbio to SolMan diagram synchornization" class="md-nav__link">
+      Symbio to SolMan diagram synchornization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sap-solution-manager-connector/SubProcessDiagramElementSync/" title="Symbio to SolMan sub process diagram element synchornization" class="md-nav__link">
+      Symbio to SolMan sub process diagram element synchornization
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-7" type="checkbox" id="nav-1-3-7">
+    
+    <label class="md-nav__link" for="nav-1-3-7">
+      SVG To Image Converter
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-3-7">
+        SVG To Image Converter
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-7-1" type="checkbox" id="nav-1-3-7-1">
+    
+    <label class="md-nav__link" for="nav-1-3-7-1">
+      Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-1-3-7-1">
+        Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rendering-service/installation-scripted/" title="Scripted Installation" class="md-nav__link">
+      Scripted Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rendering-service/installation-manual/" title="Manual installation" class="md-nav__link">
+      Manual installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rendering-service/verification/" title="Verification" class="md-nav__link">
+      Verification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rendering-service/troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rendering-service/deinstallation-manual/" title="Deinstallation" class="md-nav__link">
+      Deinstallation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-8" type="checkbox" id="nav-1-3-8">
+    
+    <label class="md-nav__link" for="nav-1-3-8">
+      Unique ID Provider
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-3-8">
+        Unique ID Provider
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-8-1" type="checkbox" id="nav-1-3-8-1">
+    
+    <label class="md-nav__link" for="nav-1-3-8-1">
+      Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-1-3-8-1">
+        Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../unique-id-provider/install-intro/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../unique-id-provider/install-conditions/" title="General conditions" class="md-nav__link">
+      General conditions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../unique-id-provider/install-scripted/" title="Scripted installation" class="md-nav__link">
+      Scripted installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../unique-id-provider/install-manual/" title="Manual installation" class="md-nav__link">
+      Manual installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../unique-id-provider/install-create-token/" title="Create token" class="md-nav__link">
+      Create token
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../unique-id-provider/install-gotchas/" title="Gotchas" class="md-nav__link">
+      Gotchas
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3-8-2" type="checkbox" id="nav-1-3-8-2">
+    
+    <label class="md-nav__link" for="nav-1-3-8-2">
+      Configuration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-1-3-8-2">
+        Configuration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../unique-id-provider/config-before-start/" title="Before Start" class="md-nav__link">
+      Before Start
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../unique-id-provider/config-create-provider/" title="Create ID Provider" class="md-nav__link">
+      Create ID Provider
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../unique-id-provider/config-provider-config/" title="Create ID Configuration" class="md-nav__link">
+      Create ID Configuration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../unique-id-provider/manual-how-to-use/" title="Manual" class="md-nav__link">
+      Manual
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-4" type="checkbox" id="nav-1-4">
+    
+    <label class="md-nav__link" for="nav-1-4">
+      Administration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-4">
+        Administration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-4-1" type="checkbox" id="nav-1-4-1">
+    
+    <label class="md-nav__link" for="nav-1-4-1">
+      External Systems
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-4-1">
+        External Systems
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../administration/external-systems/creating-external-systems/" title="Creating external systems" class="md-nav__link">
+      Creating external systems
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../administration/external-systems/connect-external-systems/" title="Connect external systems" class="md-nav__link">
+      Connect external systems
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../administration/external-systems/disconnect-external-systems/" title="Disconnect external systems" class="md-nav__link">
+      Disconnect external systems
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../administration/external-systems/create-token-and-inform-external-systems/" title="Create token and inform external systems" class="md-nav__link">
+      Create token and inform external systems
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-4-2" type="checkbox" id="nav-1-4-2">
+    
+    <label class="md-nav__link" for="nav-1-4-2">
+      Fact Sheets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-4-2">
+        Fact Sheets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../administration/fact-sheets/creating-factsheets/" title="Creating fact sheets" class="md-nav__link">
+      Creating fact sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../administration/fact-sheets/use-factsheets/" title="Use fact sheets" class="md-nav__link">
+      Use fact sheets
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-4-3" type="checkbox" id="nav-1-4-3">
+    
+    <label class="md-nav__link" for="nav-1-4-3">
+      Stereotypes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-1-4-3">
+        Stereotypes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../administration/stereotypes/creating-stereotypes/" title="Creating stereotypes" class="md-nav__link">
+      Creating stereotypes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../administration/stereotypes/use-stereotypes/" title="Use stereotypes" class="md-nav__link">
+      Use stereotypes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Developer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Developer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/getting-started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      REST API
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        REST API
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3-1" type="checkbox" id="nav-2-3-1">
+    
+    <label class="md-nav__link" for="nav-2-3-1">
+      How To
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-3-1">
+        How To
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/how-to/rest-symbio-auth-token-client-temp-example-documentation/rest-symbio-auth-token-client-temp-example-documentation/" title="Authentication Tokens" class="md-nav__link">
+      Authentication Tokens
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/how-to/quickstart-mainprocesses/quickstart-mainprocesses/" title="How to get all released mainprocesses" class="md-nav__link">
+      How to get all released mainprocesses
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/how-to/filter/" title="Filter" class="md-nav__link">
+      Filter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/how-to/error/" title="Errors" class="md-nav__link">
+      Errors
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3-2" type="checkbox" id="nav-2-3-2">
+    
+    <label class="md-nav__link" for="nav-2-3-2">
+      Reference
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-3-2">
+        Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/info/" title="Storage Information" class="md-nav__link">
+      Storage Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/facets/" title="Facets" class="md-nav__link">
+      Facets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/views/" title="Views" class="md-nav__link">
+      Views
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3-2-4" type="checkbox" id="nav-2-3-2-4">
+    
+    <label class="md-nav__link" for="nav-2-3-2-4">
+      Elements
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-3-2-4">
+        Elements
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/elements-list/" title="List" class="md-nav__link">
+      List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/elements-get/" title="Get" class="md-nav__link">
+      Get
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3-2-5" type="checkbox" id="nav-2-3-2-5">
+    
+    <label class="md-nav__link" for="nav-2-3-2-5">
+      Attributes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-3-2-5">
+        Attributes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/attributes-list/" title="List" class="md-nav__link">
+      List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/attributes-get/" title="Get" class="md-nav__link">
+      Get
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3-2-6" type="checkbox" id="nav-2-3-2-6">
+    
+    <label class="md-nav__link" for="nav-2-3-2-6">
+      Related
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-3-2-6">
+        Related
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/related-list/" title="List" class="md-nav__link">
+      List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/related-get/" title="Get" class="md-nav__link">
+      Get
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/children/" title="Children" class="md-nav__link">
+      Children
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/content/" title="Content" class="md-nav__link">
+      Content
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/elementsinfo-get/" title="Element Information" class="md-nav__link">
+      Element Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/config/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3-2-7" type="checkbox" id="nav-2-3-2-7">
+    
+    <label class="md-nav__link" for="nav-2-3-2-7">
+      Release
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-3-2-7">
+        Release
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/release-create-version/" title="Create Version" class="md-nav__link">
+      Create Version
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/release-transitions/" title="Transitions" class="md-nav__link">
+      Transitions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/rest-api/reference/release-change-state/" title="Change State" class="md-nav__link">
+      Change State
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Services
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        Services
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/services/external-systems/" title="External Systems" class="md-nav__link">
+      External Systems
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../developer/services/external-system-types/" title="External System Types" class="md-nav__link">
+      External System Types
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Azure
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Azure
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../azure/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../azure/runbooks/" title="Runbooks" class="md-nav__link">
+      Runbooks
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general" title="General" class="md-nav__link">
+    General
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rms-troubleshooting" title="RMS Troubleshooting" class="md-nav__link">
+    RMS Troubleshooting
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http-error-50019-internal-server-error-incorrect-config" title="HTTP Error 500.19 Internal Server Error - Incorrect Config" class="md-nav__link">
+    HTTP Error 500.19 Internal Server Error - Incorrect Config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#an-error-occurred-while-starting-the-application" title="An error occurred while starting the application" class="md-nav__link">
+    An error occurred while starting the application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rms-shows-error-message-in-log-when-activating-clr" title="RMS shows error message in log when activating CLR" class="md-nav__link">
+    RMS shows error message in log when activating CLR
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#symbio-troubleshooting" title="Symbio Troubleshooting" class="md-nav__link">
+    Symbio Troubleshooting
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linkingunlinking-doesnt-work" title="Linking/unlinking doesn't work" class="md-nav__link">
+    Linking/unlinking doesn't work
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#symbio-shows-a-red-error-message" title="Symbio shows a red error message" class="md-nav__link">
+    Symbio shows a red error message
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#after-unlinking-the-report-pool-the-reports-remain-in-the-storage-that-was-unlinked" title="After unlinking the report pool the reports remain in the storage that was unlinked" class="md-nav__link">
+    After unlinking the report pool the reports remain in the storage that was unlinked
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#after-linking-the-report-pool-no-reports-appear-in-symbio" title="After linking the report pool no reports appear in Symbio" class="md-nav__link">
+    After linking the report pool no reports appear in Symbio
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-of-reports-in-symbio-fails" title="Display of reports in Symbio fails" class="md-nav__link">
+    Display of reports in Symbio fails
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reports-show-incorrect-data" title="Reports show incorrect data" class="md-nav__link">
+    Reports show incorrect data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#help-everything-is-messed-up-and-i-want-to-start-over-clean" title="HELP! Everything is messed up and I want to start over clean" class="md-nav__link">
+    HELP! Everything is messed up and I want to start over clean
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-all-your-components" title="Setup all your components" class="md-nav__link">
+    Setup all your components
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unlink-your-database" title="Unlink your database" class="md-nav__link">
+    Unlink your database
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clean-existing-data-preserving-created-databases" title="Clean existing data preserving created databases" class="md-nav__link">
+    Clean existing data preserving created databases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ploetz-zeller/symbio-documentation/edit/master/docs/admin/services/reporting-service/troubleshooting.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="troubleshooting">Troubleshooting</h1>
+<h2 id="general">General</h2>
+<ul>
+<li>Ensure that the installation of all the required components was successful</li>
+<li>Symbio has to be configured and running</li>
+<li>Reporting micro service (RMS) has to be configured and running</li>
+<li>SSRS components (modules, service) have to be configured and running</li>
+<li>Ensure that the used user accounts have the appropriate rights to e.g. create folders, database, etc.</li>
+<li>If one service refuses to start in IIS, check the credentials of the user or change the user</li>
+<li>Check your table entries in the ConfigStore for undesired whitespaces which you may have inserted by accident</li>
+</ul>
+<hr />
+<h2 id="rms-troubleshooting">RMS Troubleshooting</h2>
+<h3 id="http-error-50019-internal-server-error-incorrect-config">HTTP Error 500.19 Internal Server Error - Incorrect Config</h3>
+<p>Open Powershell and navigate to the installation folder of your RMS microservices.
+Use the following commands to check that your .Net Core is installed and recognized correctly.</p>
+<div class="codehilite"><pre><span></span><span class="n">dotnet</span>
+</pre></div>
+
+
+<p><code>If you get an error here, you are missing the .NET Core Windows Server Hosting Package.</code></p>
+<div class="codehilite"><pre><span></span><span class="n">dotnet</span> <span class="n">Symbio</span><span class="p">.</span><span class="n">Service</span><span class="p">.</span><span class="n">Reporting</span><span class="p">.</span><span class="n">RestSync</span><span class="p">.</span><span class="n">dll</span>
+</pre></div>
+
+
+<p>Now open a browser and enter the following URL.</p>
+<div class="codehilite"><pre><span></span>http://localhost:5000
+</pre></div>
+
+
+<p>If you now see a page with a simple login dialog, there is an error with the IIS in connection with .Net Core.</p>
+<p>To fix this, reinstall or repair the .NET Core Windows Server Hosting Package.</p>
+<h3 id="an-error-occurred-while-starting-the-application">An error occurred while starting the application</h3>
+<p>If this error is displayed in the website, there is an error in your appsettings.json.</p>
+<p>Navigate to the installation directory of the Microservice and open your appsettings.json. Now check the stored connection string <em>ConfigStoreConnection</em> and the specification <em>ConfigStoreTableName</em></p>
+<h3 id="rms-shows-error-message-in-log-when-activating-clr">RMS shows error message in log when activating CLR</h3>
+<ul>
+<li>Check the SQL Server version. If this version is 2016, check how current it is.
+    If necessary, install the <a href="https://support.microsoft.com/en-ca/help/4037357/cumulative-update-9-for-sql-server-2016">Cumulative Update 9 for SQL Server 2016</a>.</li>
+<li>
+<p>Try to activate CLR manually.
+    ````sql
+    EXEC sp_configure 'clr enabled', 1;
+        RECONFIGURE;</p>
+<p>EXEC sp_configure 'show advanced options',1;
+    RECONFIGURE;</p>
+<p>EXEC sp_configure 'clr strict security', 0;
+    RECONFIGURE;
+````</p>
+</li>
+</ul>
+<hr />
+<h2 id="symbio-troubleshooting">Symbio Troubleshooting</h2>
+<h3 id="linkingunlinking-doesnt-work">Linking/unlinking doesn't work</h3>
+<h4 id="symbio-shows-a-red-error-message">Symbio shows a red error message</h4>
+<ul>
+<li>Go to _sysadmin/_admin level and check the configuration of the report pool you want to link</li>
+<li>The endpoint must be properly configured and the reporting micro service (RMS) has to be setup properly and responding</li>
+<li>Also check for missing firewall rules that prevent Symbio from communicating with the RMS and vice versa</li>
+<li>Be sure that you provided the correct authentication token (The value in the report pool and in the ConfigStore have to match)</li>
+</ul>
+<h4 id="after-unlinking-the-report-pool-the-reports-remain-in-the-storage-that-was-unlinked">After unlinking the report pool the reports remain in the storage that was unlinked</h4>
+<ul>
+<li>When unlinking a report pool all the reports that were created on Symbio side should be deleted</li>
+<li>If this is not the case, it is most likely that you have modified the URL of the reports, so that they no longer include the tenant id key</li>
+</ul>
+<h4 id="after-linking-the-report-pool-no-reports-appear-in-symbio">After linking the report pool no reports appear in Symbio</h4>
+<ul>
+<li>Check the log of the RMS for errors. It is most likely that the RMS had some problem with retrieving the available reports from SSRS side</li>
+<li>Check the credentials to access the SSRS (e.g. SsrsSettings -&gt; SOAP) in the ConfigStore</li>
+<li>On SSRS side check, if the target folder already exists so that the reports were not copied</li>
+<li>Check all the components mentioned above and verify, that they are running</li>
+</ul>
+<h3 id="display-of-reports-in-symbio-fails">Display of reports in Symbio fails</h3>
+<ul>
+<li>Check the reports configured in the admin area and verify, that all settings are pointing to the correct urls, especially url and the authentication url</li>
+<li>The tenant id parameter has to be provided in the report url, it should automatically provided, when linking is done</li>
+<li>Check the headers of the reports to have the correct data, e.g. compare it with the token on SSRS side, so that Symbio may communicate with the SSRS</li>
+<li>Verify, that there are no typos, e.g. special characters or incorrect placeholder values</li>
+<li><strong>NOTE:</strong> Please be aware, that for proper cross communication Symbio and the SSRS should reside in the same domain. This is important for the certificates you use as much as for the configuration of the report, e.g. <em><code>https://SERVERNAME.DOMAIN/REPORTSERVERNAME...</code></em> for the <code>URL</code>.</li>
+</ul>
+<h3 id="reports-show-incorrect-data">Reports show incorrect data</h3>
+<ul>
+<li>Be sure to use the latest report files on SSRS side, that are applicable for you</li>
+<li>Observe the RMS log for errors and perhaps have a look at the configured ODS database</li>
+<li>In the ConfigStore check the hangfire tables (Hangfire.Job(s), Hangfire.Set) for scheduled jobs or retries, these could indicate sql remedies</li>
+<li>Check if Symbio is fitting to all the other components regarding the version. In most cases every component should be available in its latest version.</li>
+</ul>
+<hr />
+<h2 id="help-everything-is-messed-up-and-i-want-to-start-over-clean">HELP! Everything is messed up and I want to start over clean</h2>
+<h3 id="setup-all-your-components">Setup all your components</h3>
+<ul>
+<li>Within this manual there are descriptions on how to configure and set up each component. Follow them until everything is set up</li>
+</ul>
+<h3 id="unlink-your-database">Unlink your database</h3>
+<ul>
+<li>If you want a fresh and clean start, it is necessary to unlink your database from the report pool</li>
+</ul>
+<h3 id="clean-existing-data-preserving-created-databases">Clean existing data preserving created databases</h3>
+<ul>
+<li>Stop the RMS on IIS so it can not be reached</li>
+<li>Locate the database used for your ConfigStore</li>
+<li>If you didn't configure a separate Hangfire database, delete all the hangfire tables in the ConfigStore database (Hangfire prefix!)</li>
+<li>If you are afraid of deleting all the tables, set every row in Hangfire.Job to "Failed", where the StateName is "Processing" or "Scheduled", and delete all rows in Hangfire.Set</li>
+<li>Remove all tables of the ODS database you specified <strong>(ATTENTION!*)</strong></li>
+<li>Browse to your SSRS web portal and check the folder structure</li>
+<li>Inspect the folder prefixed with your report pool id (OriginKey of the report pool you connected in Symbio) for the latest report</li>
+<li>If the reports are outdated, update them or delete the whole folder <strong>(ATTENTION!*)</strong></li>
+<li>If you have managed all this, restart the RMS and try to link again in Symbio</li>
+</ul>
+<p><strong>*NOTE</strong>: Only delete the TenantId prefixed folder, if you are absolutely sure, that no other database currently uses it</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../RMSconfiguration/" title="RMS Configuration" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                RMS Configuration
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../sap-solution-manager-connector/SolmanInterfaceSetUpGuide/" title="Installation" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Installation
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Ploetz + Zeller GmbH
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/application.b806dc00.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
+      
+    
+  </body>
+</html>
