@@ -926,15 +926,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#local-tasks" title="Local tasks" class="md-nav__link">
-    Local tasks
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#global-tasks" title="Global tasks" class="md-nav__link">
-    Global tasks
+  <a href="#tasks" title="Tasks" class="md-nav__link">
+    Tasks
   </a>
   
     <nav class="md-nav">
@@ -2082,15 +2075,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#local-tasks" title="Local tasks" class="md-nav__link">
-    Local tasks
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#global-tasks" title="Global tasks" class="md-nav__link">
-    Global tasks
+  <a href="#tasks" title="Tasks" class="md-nav__link">
+    Tasks
   </a>
   
     <nav class="md-nav">
@@ -2158,21 +2144,20 @@
 <hr />
 <p><img alt="Test" src="../media/GatewayXOR.png" /></p>
 <hr />
-<h3 id="local-tasks">Local tasks</h3>
-<p><strong>Local task</strong> created in Symbio will be synchornized to SolMan as a <em>draft tasks</em>.</p>
+<h3 id="tasks">Tasks</h3>
+<p>Both <strong>Local task</strong> and <strong>Global task</strong> in Symbio can be synchronized in SolMan in two ways: as a <em>draft task</em> or as a <em>process step</em>.
+There is a checkbox option in the Detail Content, which if it is checked will be a sign for microservice to synchronize task as a process step, otherwise, task will be synchronized as a draft task. The defaulte value for the checkbox is true:</p>
+<hr />
+<p><img alt="Test" src="../media/CreateProcessStepCheckBox.png" /></p>
+<hr />
+<p>If checkbox is <strong>not</strong> selected, a <em>draft task</em> will be creaed in the SolMan diagram,</p>
 <p><img alt="Test" src="../media/LocalTask.png" /></p>
-<h3 id="global-tasks">Global tasks</h3>
-<p>Symbio <strong>Global task</strong> can be synchronized in SolMan in two ways: as a <em>draft task</em> or as a <em>process step</em>.
-There is a checkbox option in the Detail Content, which if it is checked will be a sign for microservice to synchronize global task as a process step, otherwise, global taks will be synchronized as if it is a local task, so as a draft task. The defaulte value for the checkbox is true:</p>
-<hr />
-<p><img alt="Test" src="media/CreateProcessStepCheckbox.png" /></p>
-<hr />
 <p>If checkbox is selected, Process Step will be created in ProcessStepLibrary, and reference to the Process Step will be created in the diagram. Also the new Process Step in Solman will be created for every instance of a global task in the diagram:</p>
 <hr />
 <p><img alt="Test" src="../media/ProcessStepsExample.png" /></p>
 <hr />
-<p>You can see in the example above the draft task "DoNotCreatProcessStep". Actually in Symbio, that is the Global Task, that has the flag for ProcessStep creation set to false. So because of that, it will be synchronized
-as if it is a local task, so no Process Step nor its reference will be created.</p>
+<p>You can see in the example above the draft task "DoNotCreatProcessStep". In Symbio, that is the Global Task, that has the flag for ProcessStep creation set to false. So because of that, it will be synchronized
+as a draft task, so no Process Step nor its reference will be created.</p>
 <h5 id="documants-attached-to-global-tasks">Documants attached to global tasks</h5>
 <p>If you attach a link document to the Global task in Symbio, it will also be synchornized with the global task. 
 Be aware that this is only available if you create a process step, so the that checkbox has to be set to true:</p>
